@@ -1,0 +1,6 @@
+ Restart the sshd service
+a. Remember, to action 
+service sshd restart
+Open a new GitBash window and log into your ssh service using the new port.
+Research how to specify the port using the ssh command
+ssh root@159.203.61.229 -p 2222
