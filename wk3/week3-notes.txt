@@ -1,0 +1,44 @@
+# Week 3
+Overview
+1. Objective:
+- Passive and Active sniffing
+- Address Resolution protocol (ARP)
+- ARP poisoning
+- Media Access Control (MAC) address flooding
+2. Main Teaching Points
+- Listening/Monitoring/Observation is intermediate step
+- Exploition
+
+
+Notes:
+1. Network Sniffing: Process of monitoring and capturing data (packets) of a network
+	+ Promiscuous mode
+		+ Allows device to intercept and read each network packet that arrives in its
+		 entirety
+2. TCP has a sequence number to help you rearrange the packet after getting sent
+3. Comparison:
+	+ Char Room VS Istant Messenger
+4. Significance / Risks
+	+ Can see all traffic event if it was no intended for your network
+
+CIA in Cyber Security:
+C: Confidentiality
+I: Integrity
+A: Availability
+
+Favorite Artist:
+Harry Styles
+Conversation
+
++ Key definitions
+1. Hub
+2. Switch
+
+
+- How Network sniffing Works
+- Sniffer tools turns the Network Interface Card (NIC) of system to the promiscuous mode
+- Attacker forces switch to behave as a hub
+- Attacker PC running NIc card in Promiscuous mode
+- What is ARP
+
+
