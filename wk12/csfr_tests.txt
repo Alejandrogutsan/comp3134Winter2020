@@ -1,1 +1,1 @@
-When using the csfr.html form, the page just redirect to the csfr.php file without capturing any information about the sender. While using the csfr_form.php the hidden information and the session will be sent to the action page which is csfr_action.php
+Executing the csfr.html form will result in the page just being redirect to the csfr.php file without saving any information about the sender. As executing the csfr_form.php the information that is hidden and also the session its sent to the csfr_action.php page.

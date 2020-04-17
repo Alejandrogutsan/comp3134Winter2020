@@ -1,21 +1,18 @@
 <?php
 
-// Starting a session
-session_start();
 
-// Storing session data
+session_start();
 $session = $_SESSION['confirmation'];
-// Storing the post value data
 $post = $_POST['confirmation'];
 
 
 $displayForm = true;
-$email = $_POST['uname'];
-$password = $_POST['psw'];
-if(isset($_POST['psw']) && isset($_POST['uname'])){
+$email = $_POST['username'];
+$password = $_POST['passwd'];
+if(isset($_POST['passwd']) && isset($_POST['username'])){
   $displayForm = false;
-  $successMsg = 'Successfully logged in';
-  $failMsg = 'Failed to log in';
+  $successMsg = 'Login Successfully ';
+  $failMsg = ' Login Unuccessfull';
   if($email === 'host' && $password === 'pass'){
 	echo "<div>".$successMsg."</div>";
 	echo "<div>Session: ".$session."</div>";
@@ -28,10 +25,10 @@ if(isset($_POST['psw']) && isset($_POST['uname'])){
 if($displayForm){
 ?>
 <form action="csfr.php" method="POST">
-	<label for="uname"><b>Username</b></label>
-	<input type="text" placeholder="Enter Username" name="uname" required>
-	<label for="psw"><b>Password</b></label>
-	<input type="password" placeholder="Enter Password" name="psw" required>
+	<label for="username"><b>Username</b></label>
+	<input type="text" placeholder="Enter Username" name="username" required>
+	<label for="passwd"><b>Password</b></label>
+	<input type="password" placeholder="Enter Password" name="passwd" required>
     	<button type="submit">Login</button>
 </form>
 <?php
